@@ -1,0 +1,275 @@
+>>> 1+55
+56
+>>> print("Hello World")
+Hello World
+>>> print
+<built-in function print>
+>>> print()
+
+>>> help
+>>> Welcome to Python 3.13's help utility! If this is your first time using
+Python, you should definitely check out the tutorial at
+https://docs.python.org/3.13/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To get a list of available
+modules, keywords, symbols, or topics, enter "modules", "keywords",
+"symbols", or "topics".
+
+Each module also comes with a one-line summary of what it does; to list
+the modules whose name or summary contain a given string such as "spam",
+enter "modules spam".
+
+To quit this help utility and return to the interpreter,
+enter "q", "quit" or "exit".
+
+help> q
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> print("ЯГЕНИЙ")
+ЯГЕНИЙ
+>>> prin()
+Traceback (most recent call last):
+  File "<python-input-5>", line 1, in <module>
+    prin()
+    ^^^^
+NameError: name 'prin' is not defined. Did you mean: 'print'?
+>>> my_name
+Traceback (most recent call last):
+  File "<python-input-6>", line 1, in <module>
+    my_name
+NameError: name 'my_name' is not defined
+>>> name
+Traceback (most recent call last):
+  File "<python-input-7>", line 1, in <module>
+    name
+NameError: name 'name' is not defined
+>>> print()
+
+>>> print)
+  File "<python-input-9>", line 1
+    print)
+         ^
+SyntaxError: unmatched ')'
+>>> printasdasd)
+  File "<python-input-10>", line 1
+    printasdasd)
+               ^
+SyntaxError: unmatched ')'
+>>> print(asdasd)
+Traceback (most recent call last):
+  File "<python-input-11>", line 1, in <module>
+    print(asdasd)
+          ^^^^^^
+NameError: name 'asdasd' is not defined
+>>> print("ЯГЕНИЙ")
+ЯГЕНИЙ
+>>> print('ЯГЕНИЙ')
+ЯГЕНИЙ
+>>> print("jagay \n nigga \n man")
+jagay
+ nigga
+ man
+>>> print("jagay \nnigga \nman")
+jagay
+nigga
+man
+>>> print("jagay\nnigga\nman")
+jagay
+nigga
+man
+>>> print('\')
+  File "<python-input-17>", line 1
+    print('\')
+          ^
+SyntaxError: unterminated string literal (detected at line 1); perhaps you escaped the end quote?
+>>> print('\\')
+\
+>>> print('sda"dads')
+sda"dads
+>>> print("sda"dads")
+  File "<python-input-20>", line 1
+    print("sda"dads")
+                   ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print('sda"dads')
+sda"dads
+>>> print(1, 2, 4, "text")
+1 2 4 text
+>>> print(1,2,4,"text")
+1 2 4 text
+>>> print(1,2,3,4 sep="***"
+  File "<python-input-24>", line 1
+    print(1,2,3,4 sep="***"
+                ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(1,2,3,4 sep="***")
+  File "<python-input-25>", line 1
+    print(1,2,3,4 sep="***")
+                ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(1,2,3,4, sep="***")
+1***2***3***4
+>>> print(1,2,3,4, sep="***", end='\n')
+1***2***3***4
+>>> print(1,2,3,4, sep="***", end='\n\n\n')
+1***2***3***4
+
+
+>>> print(1,2,3,sep="***",4, sep="...", end='\n\n\n')
+  File "<python-input-29>", line 1
+    print(1,2,3,sep="***",4, sep="...", end='\n\n\n')
+                                                    ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3,sep="***",4, sep="...")
+  File "<python-input-30>", line 1
+    print(1,2,3,sep="***",4, sep="...")
+                                      ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3,sep="***",4, sep=...)
+  File "<python-input-31>", line 1
+    print(1,2,3,sep="***",4, sep=...)
+                                    ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3,sep="***", end=...4\n")
+  File "<python-input-32>", line 1
+    print(1,2,3,sep="***", end=...4\n")
+                                    ^
+SyntaxError: unexpected character after line continuation character
+>>> print(1,2,3,sep="***", end="...4\n")
+1***2***3...4
+>>> print(1,2,3,sep="***", sep="...4")
+  File "<python-input-34>", line 1
+    print(1,2,3,sep="***", sep="...4")
+                           ^^^^^^^^^^
+SyntaxError: keyword argument repeated: sep
+>>> print(1,2,3,sep="***", "...4")
+  File "<python-input-35>", line 1
+    print(1,2,3,sep="***", "...4")
+                                 ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3,sep="***", '...4')
+  File "<python-input-36>", line 1
+    print(1,2,3,sep="***", '...4')
+                                 ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3,sep="***",'...4')
+  File "<python-input-37>", line 1
+    print(1,2,3,sep="***",'...4')
+                                ^
+SyntaxError: positional argument follows keyword argument
+>>> print(1,2,3,sep="***",'...4')
+KeyboardInterrupt
+>>> 1000
+1000
+>>> -1000
+-1000
+>>> 2500
+2500
+>>> -4000
+-4000
+>>> 2ю4
+  File "<python-input-42>", line 1
+    2ю4
+     ^^
+SyntaxError: invalid syntax
+>>> 2500.5
+2500.5
+>>> -2.5
+-2.5
+>>> 111111
+111111
+>>> 111_111
+111111
+>>> """dsfgfsdfsdfsd
+... saddasdasdas
+... asdsadsadasdsa
+... 313132
+... "
+... """
+'dsfgfsdfsdfsd\nsaddasdasdas\nasdsadsadasdsa\n313132\n"\n'
+>>> print("""dsfsdfsdfsd
+... fdsfsdsfdsfd
+... sdfsdfsdfsdfsd
+... dsfsfdfdsfsd
+...
+... """)
+dsfsdfsdfsd
+fdsfsdsfdsfd
+sdfsdfsdfsdfsd
+dsfsfdfdsfsd
+
+
+>>> Print(""" "1"
+...     "2"
+...     \"""3""\"
+...     """)
+Traceback (most recent call last):
+  File "<python-input-49>", line 1, in <module>
+    Print(""" "1"
+    ^^^^^
+NameError: name 'Print' is not defined. Did you mean: 'print'?
+>>> print(""" "1"
+...     "2"
+...     \"""3""\"
+...     """)
+ "1"
+    "2"
+    """3"""
+
+>>> 23e5
+2300000.0
+>>> 23e-4
+0.0023
+>>> age = 12
+>>> print(age)
+12
+>>> 10
+10
+>>> ten = 10
+>>> ten
+10
+>>> ten + 9
+19
+>>> ten / 3
+3.3333333333333335
+>>> ten *66
+660
+>>> 1age = 99
+  File "<python-input-61>", line 1
+    1age = 99
+    ^
+SyntaxError: invalid decimal literal
+>>> ag e = 88
+  File "<python-input-62>", line 1
+    ag e = 88
+       ^
+SyntaxError: invalid syntax
+>>> Age = 99
+>>> Age
+99
+>>> age
+12
+>>> ten + Age *age
+1198
+>>> ten + Age * age
+1198
+>>> age = 7
+>>> ten + Age * age
+703
+>>> type(age)
+<class 'int'>
+>>> age = "asd"
+>>> type(age)
+<class 'str'>
+>>> 2+2
+4
+>>> 2 / 2
+1.0
+>>> 2.0 + 2
+4.0
+>>> 2 // 2
+1
