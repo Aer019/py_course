@@ -1,0 +1,1 @@
+SELECT u_name, u_id FROM user;

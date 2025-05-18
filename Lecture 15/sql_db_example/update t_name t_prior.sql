@@ -1,0 +1,1 @@
+UPDATE task SET t_name="Отдыхать",t_priority=100000 WHERE t_id=4;
